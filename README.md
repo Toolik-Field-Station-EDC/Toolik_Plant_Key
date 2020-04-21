@@ -25,6 +25,9 @@ TFS_flora <-
 glimpse(TFS_flora)
 head(TFS_flora)
 ```
+```{r cars}
+head(TFS_flora)
+```
 
 # Run the script
 If using a picture make sure there is a url in the table above when you import it.  Then you can use 'img_panel(url)' to identify which picture you would like.
