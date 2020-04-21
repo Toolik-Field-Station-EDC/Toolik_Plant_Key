@@ -11,7 +11,9 @@ library(dplyr)
 library(trelliscopejs)
 ```
 
-# read the data (making "_id" columns strings)
+# Read in the data 
+## making "_id" columns strings
+
 ```{r include = FALSE}
 TFS_flora <-
   read_csv("C:/Users/Amanda B. Young/Documents/website/plant_key/plants_web.csv") %>%
@@ -22,6 +24,10 @@ TFS_flora <-
 ```{r }
 glimpse(TFS_flora)
 ```
+
+# Run the script
+## If using a picture make sure there is a url in the table above when you import it.  Then you can use 'img_panel(url)' to identify which picture you would like.
+
 ```{r flora}
 TFS_flora %>%
   mutate(panel = img_panel(url)) %>%
