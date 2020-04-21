@@ -23,10 +23,6 @@ TFS_flora <-
 # take a look
 ```{r }
 glimpse(TFS_flora)
-head(TFS_flora)
-```
-```{r cars}
-head(TFS_flora)
 ```
 
 # Run the script
