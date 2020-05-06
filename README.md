@@ -29,8 +29,10 @@ glimpse(TFS_flora)
 If using a picture make sure there is a url in the table above when you import it.  Then you can use 'img_panel(url)' to identify which picture you would like.
 
 ```{r flora}
-TFS_flora %>%
+d<-TFS_flora %>%
   mutate(panel = img_panel(url)) %>%
   trelliscope("Toolik Plant Key", nrow = 3, ncol = 6,
               state = list(labels = c("Latin", "common")))
 ```
+d
+

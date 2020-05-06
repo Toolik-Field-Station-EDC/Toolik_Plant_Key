@@ -18,3 +18,4 @@ pok %>%
   mutate(panel = img_panel(url)) %>%
   trelliscope("Toolik Plant Key", nrow = 3, ncol = 6,
               state = list(labels = c("Latin", "common")))
+

@@ -1,0 +1,29 @@
+---
+title: "Test Multiple Trelliscopes"
+date: "11/21/2019"
+output: 
+  html_document:
+    code_folding: hide
+    lib_dir: trelli
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+library(trelliscopejs)
+library(ggplot2)
+
+data(iris)
+```
+
+
+```{r}
+qplot(Sepal.Length, Sepal.Width, data = iris) + facet_trelliscope(~Species, nrow = 1, ncol = 2, path = "trelli/trelli_one")
+
+```
+
+
+```{r}
+qplot(Sepal.Length, Sepal.Width, data = iris) + facet_trelliscope(~Species, nrow = 1, ncol = 2, path = "trelli/trelli_two")
+
+```
+
